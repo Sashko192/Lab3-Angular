@@ -1,0 +1,7 @@
+<p *ngIf="product.price > 700">
+    <button>Notify Me</button>
+</p>
+<div>
+    <h4>Alert for {{ product.name }}</h4>
+    <button (click)="onNotify()">Notify Me</button>
+  </div>

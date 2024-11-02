@@ -1,0 +1,65 @@
+/* Відцентрування контейнера по вертикалі та горизонталі */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Висота 100% від вікна браузера */
+    background-color: #f0f2f5; /* Легкий фон */
+  }
+  
+  /* Стиль форми */
+  .login-form {
+    background-color: white; /* Білий фон форми */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* М'яка тінь */
+    width: 350px; /* Ширина форми */
+    display: flex;
+    flex-direction: column; /* Всі елементи підряд */
+  }
+  
+  .login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0ef79a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #0ef79a; /* Зміна кольору кнопки при наведенні */
+  }
+  
+  /* Підказки при наведенні */
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  

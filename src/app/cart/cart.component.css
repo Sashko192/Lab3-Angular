@@ -1,0 +1,82 @@
+/* Центруємо контейнер кошика */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрує по горизонталі */
+  justify-content: center; /* Центрує по вертикалі */
+  min-height: 100vh; /* Задає мінімальну висоту на всю висоту екрана */
+  background-color: #f9f9f9; /* Задає фон */
+  padding: 20px; /* Відступи */
+}
+
+/* Заголовок кошика */
+h3 {
+  color: #333; /* Колір тексту заголовка */
+  margin-bottom: 20px; /* Відстань між заголовком і контентом */
+}
+
+/* Стилізуємо форму */
+.checkout-form {
+  background: white;           /* Білий фон для форми */
+  padding: 20px;              /* Внутрішній відступ */
+  border-radius: 8px;         /* Закруглені кути */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для ефекту глибини */
+  width: 300px;               /* Фіксована ширина */
+}
+
+/* Стилізуємо поля вводу */
+input {
+  margin-bottom: 10px;        /* Відстань між полями */
+  padding: 10px;              /* Внутрішній відступ */
+  border: 1px solid #ccc;     /* Рамка */
+  border-radius: 4px;         /* Закруглені кути */
+  width: 100%;                /* Ширина на всю ширину контейнера */
+}
+
+/* Стилізуємо кнопку */
+button {
+  background-color: #28a745;  /* Зелений фон для кнопки */
+  color: white;                /* Білий текст */
+  padding: 10px;              /* Внутрішній відступ */
+  border: none;                /* Без рамки */
+  border-radius: 4px;         /* Закруглені кути */
+  cursor: pointer;             /* Курсор у вигляді вказівника */
+  transition: background-color 0.3s; /* Плавний перехід фону */
+}
+
+button:hover {
+  background-color: #218838;  /* Темніший фон при наведенні */
+}
+
+/* Стилізуємо елементи кошика */
+.cart-item {
+  margin: 10px 0;             /* Відстань між елементами кошика */
+  display: flex;               /* Використовуємо Flexbox для розташування елементів */
+  justify-content: space-between; /* Вирівнюємо по краях */
+  width: 100%;                /* Ширина на всю ширину контейнера */
+}
+
+/* Назва та ціна товару */
+.item-name {
+  flex: 1; /* Займає всю доступну ширину */
+  margin-right: 10px; /* Відстань між назвою та ціною */
+}
+
+.item-price {
+  margin-right: 10px; /* Відстань між ціною та кнопкою */
+}
+
+/* Стилізуємо посилання на доставку */
+.shipping-link {
+  color: #007bff; /* Синій колір для посилання */
+  text-decoration: none; /* Без підкреслення */
+}
+
+.shipping-link:hover {
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+/* У вашому cart.component.css */
+body {
+  font-family: 'Arial', sans-serif; /* Встановлюємо шрифт для всього тіла */
+}

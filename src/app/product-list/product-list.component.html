@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Вітаємо вас в магазині іграшок "Свій роздум"</h1>
+  <h2>Творіть незабутні миті разом з нашими іграшками</h2>
+  <div class="product-list row">
+      <div *ngFor="let product of products" class="col-md-4">
+          <div class="product-card">
+              <img [src]="product.image" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                  <h5 class="card-title">{{ product.name }}</h5>
+                  <p class="card-text">{{ product.description }}</p>
+                  <button class="button" (click)="addToCart(product)">Купити</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

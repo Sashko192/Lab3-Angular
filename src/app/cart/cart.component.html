@@ -1,0 +1,25 @@
+<div class="cart-container">
+  <h3>Ваш Кошик</h3>
+
+  <div *ngIf="items.length > 0; else emptyCart">
+    <div class="cart-item" *ngFor="let item of items">
+      <span class="item-name">{{ item.name }}</span>
+      <span class="item-price">{{ item.price | currency }}</span>
+      <button class="btn btn-danger" (click)="removeFromCart(item)">Видалити</button>
+    </div>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="checkout-form">
+      <label for="name">Ім'я:</label>
+      <input id="name" formControlName="name" required>
+
+      <label for="address">Адреса:</label>
+      <input id="address" formControlName="address" required>
+
+      <button class="btn btn-primary" type="submit">Оформити замовлення</button>
+    </form>
+  </div>
+
+  <ng-template #emptyCart>
+    <p>Ваш кошик порожній. Додайте товари для продовження.</p>
+  </ng-template>
+</div>
